@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero-section {
+    background: black;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.rememberance {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5rem;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.title-paul {
+    font-family: 'Marcellus', serif;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.dates {
+    font-family: 'Marcellus', serif;
+    font-size: 1.5rem;
+    color: #b0b0b0;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+}
+
+.photo-quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.quote-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.quote-content {
+    background: rgba(15, 15, 15, 0.05);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 3px solid #e63946;
+    backdrop-filter: blur(5px);
+}
+
+.quote {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #f8f9fa;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.attribution {
+    font-family: 'Marcellus', serif;
+    color: #e63946;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-style: normal;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    position: relative;
+}
+
+.homepage-photo {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.homepage-photo:hover {
+    transform: scale(1.02);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+.quick-facts {
+    background: #1a1a1a;
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-family: 'Marcellus', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    position: relative;
+    
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e63946;
+    margin: 1rem auto;
+}
+.biography-section {
+    padding: 5rem 0;
+    background: #0f0f0f;
+}
+
+.biography-section.alt-bg {
+    background: #1a1a1a;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bio-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.bio-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bio-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.bio-image img:hover {
+    transform: scale(1.03);
+}
+
+.bio-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bio-title {
+    font-family: 'Marcellus', serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.bio-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #e63946;
+}
+
+.paul-life {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
