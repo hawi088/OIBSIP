@@ -1,0 +1,86 @@
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(51, 50, 50);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.displayBoard {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    color: black;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border: 2px solid #666;
+    border-radius: 5px;
+    background-color: rgb(200, 200, 200);
+    box-sizing: border-box;
+}
+
+.calculatorButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(170, 169, 169);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.isequalto {
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+
+.isequalto:hover {
+    background-color: rgb(243, 151, 46);
+}
+
+/* Style for operator buttons */
+button:not(.isequalto):not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+    background-color: rgb(170, 170, 170);
+}
+
+button:not(.isequalto):not(:first-child):not(:nth-child(2)):not(:nth-child(3)):hover {
+    background-color: rgb(150, 150, 150);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .calculator {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    .displayBoard {
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
