@@ -328,3 +328,26 @@ body {
         gap: 1.5rem;
     }
 }
+html {
+    scroll-behavior: smooth;
+}
+
+.bio-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(230, 57, 70, 0.2);
+}
+
+.biography-section, .quick-facts, .legacy-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.biography-section.visible, .quick-facts.visible, .legacy-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
