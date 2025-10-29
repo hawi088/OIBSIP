@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="to-do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-title">Task Manager</h1>
+                <button class="toggle-btn" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="categories">
+                <h3 class="category-title">Categories</h3>
+                <ul class="category-list" id="categoryList">
+                    <li class="category-item active" data-category="all">
+                        <span class="category-icon"><i class="fas fa-list"></i></span> All Tasks
+                    </li>
+                    <li class="category-item" data-category="work">
+                        <span class="category-icon"><i class="fas fa-briefcase"></i></span> Work
+                    </li>
+                    <li class="category-item" data-category="personal">
+                        <span class="category-icon"><i class="fas fa-home"></i></span> Personal
+                    </li>
+                    <li class="category-item" data-category="shopping">
+                        <span class="category-icon"><i class="fas fa-shopping-cart"></i></span> Shopping
+                    </li>
+                    <li class="category-item" data-category="goals">
+                        <span class="category-icon"><i class="fas fa-bullseye"></i></span> Goals
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="task-summary">
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="content-header">
+                <h2 class="content-title" id="currentCategory">All Tasks</h2>
+                <div class="task-stats">
+                    <span id="taskCount">0 tasks</span>
+                    <span id="completedCount">0 completed</span>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <select id="taskCategory">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="goals">Goals</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            
+            <div class="task-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            
+            <ul id="taskList">
+            </ul>
+            
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>No tasks yet</h3>
+                <p>Add a task to get started!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="to-do.js"></script>
+</body>
+</html>
