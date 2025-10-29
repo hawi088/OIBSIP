@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         taskInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 addTask();
+                loadTasks();
             }
         });
         
@@ -96,3 +97,16 @@ function renderTasks() {
         });
     }
 }
+function saveTasks() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function loadTasks() {
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+        tasks = JSON.parse(savedTasks);
+        renderTasks();
+    }
+}
+
+
