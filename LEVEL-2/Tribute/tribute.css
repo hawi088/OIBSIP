@@ -297,6 +297,9 @@ body {
     .bio-title {
         font-size: 1.8rem;
     }
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -335,4 +338,67 @@ html {
 .bio-image img:hover {
     transform: scale(1.03);
     box-shadow: 0 15px 35px rgba(230, 57, 70, 0.2);
+}
+.quick-facts {
+    background: #1a1a1a;
+    padding: 4rem 0;
+}
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.fact-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(145, 44, 44, 0.08);
+    border-color: #e63946;
+}
+
+.fact-card i {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.fact-card h3 {
+    font-family: 'Marcellus', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.fact-card p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.fact-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.fact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(230, 57, 70, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.fact-card:hover::before {
+    left: 100%;
 }
