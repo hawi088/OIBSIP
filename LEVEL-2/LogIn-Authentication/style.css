@@ -290,3 +290,26 @@ body {
     color: #718096;
     font-size: 0.875rem;
 }
+.password-strength {
+    margin-top: 0.5rem;
+    height: 4px;
+    background: #e2e8f0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background: #e53e3e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.strength-bar.medium {
+    background: #ed8936;
+}
+
+.strength-bar.strong {
+    background: #38a169;
+}
