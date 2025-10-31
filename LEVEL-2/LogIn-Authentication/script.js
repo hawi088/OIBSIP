@@ -79,16 +79,13 @@ class CanvaAuth {
     initLogin() {
         const form = document.getElementById('loginForm');
         form.addEventListener('submit', async (e) => {
-            // Using async/await to simulate API call delay
-            // We're "waiting" for the setTimeout to complete
+           
             e.preventDefault();
             
             const email = document.getElementById('loginEmail').value;
             const password = document.getElementById('loginPassword').value;
             const button = form.querySelector('.submit-btn');
             button.classList.add('loading');
-            
-            // Simulate API call delay - wait 1.5 seconds
             await new Promise(resolve => setTimeout(resolve, 1500));
             
             const user = this.authenticate(email, password);
