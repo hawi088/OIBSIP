@@ -40,13 +40,7 @@ A modern, responsive authentication interface inspired by Canva's design languag
 3. Open `index.html` in a web browser
 
 ## File Structure
-```
-LogIn-Authentication/
-├── index.html          # Sign In page
-├── register.html       # Sign Up page  
-├── style.css           # All styling components
-└── script.js           # Authentication logic & interactions
-```
+<pre> ```bash LogIn-Authentication/ ├── index.html ├── register.html ├── style.css └── script.js ``` </pre>
 
 ## Design Features
 
