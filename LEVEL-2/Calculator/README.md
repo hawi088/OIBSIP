@@ -1,16 +1,20 @@
-Calculator
+#Calculator
 
-A simple web calculator built with HTML, CSS, and JavaScript.
+A simple web calculator built with **HTML**, **CSS**, and **JavaScript**.
 
-Features
-- Basic math operations
-- Responsive design
-- Keyboard support
+## Features
+-  Basic math operations  
+-  Responsive design  
+- Keyboard support  
 
-Files
-- calculator.html - Main structure
-- calculator.css - Styling  
-- calculator.js - Functionality
+##  Files
+```bash
+LogIn-Authentication/
+├── index.html
+├── register.html
+├── style.css
+└── script.js
+```
 
-How to Run
-Open calculator.html in your web browser.
+##  How to Run
+Open **calculator.html** in your web browser.
