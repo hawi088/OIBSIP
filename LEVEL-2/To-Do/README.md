@@ -43,10 +43,11 @@ A clean, responsive todo web app built with vanilla JavaScript.
 ## File Structure
 
 ## File Structure
+```bash
 To-Do/
 ├── to-do.html
 ├── to-do.css
 ├── to-do.js
 └── README.md
-
+```
 No dependencies required. Works in all modern browsers.
