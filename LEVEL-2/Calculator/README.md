@@ -44,12 +44,12 @@ Calculator/
 └── calculator.js
 ```
 
-### 5.  How to Run
+## How to Run
 - Clone or download the project files
 - Open index.html in your web browser
 - Start calculating!
 
-### 6. Keyboard Support
+## Keyboard Support
 -Use number keys (0-9) for digits
 -Use +, -, *, / for operations
 -Press Enter for equals
