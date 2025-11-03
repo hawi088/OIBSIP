@@ -50,7 +50,7 @@ Calculator/
 - Start calculating!
 
 ## Keyboard Support
--Use number keys (0-9) for digits
--Use +, -, *, / for operations
--Press Enter for equals
--Press Escape or C for clear
+- Use number keys (0-9) for digits
+- Use +, -, *, / for operations
+- Press Enter for equals
+- Press Escape or C for clear
