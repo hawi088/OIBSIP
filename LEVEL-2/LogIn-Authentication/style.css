@@ -78,11 +78,11 @@ body {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.form-input:placeholder-shown + .input-label {
+/* .form-input:placeholder-shown + .input-label {
     transform: translateY(0);
     font-size: 1rem;
     color: #a0aec0;
-}
+} */
 
 .input-label {
     position: absolute;
@@ -97,12 +97,12 @@ body {
     pointer-events: none;
 }
 
-.form-input:focus + .input-label {
+/* .form-input:focus + .input-label {
     top: 0;
     transform: translateY(-50%);
     font-size: 0.75rem;
     color: #667eea;
-}
+} */
 
 .password-toggle {
     position: absolute;
