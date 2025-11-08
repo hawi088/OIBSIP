@@ -9,7 +9,6 @@ A modern, responsive authentication interface inspired by Canva's design languag
 ### **Authentication Forms**
 - **Sign In Form**: Email/password login with "Remember me" option
 - **Sign Up Form**: Complete registration with name, email, password confirmation
-- **Social Authentication**: Google, Facebook, and Apple login options
 - **Password Management**: Show/hide password toggle and strength indicator
 
 ### **User Experience**
